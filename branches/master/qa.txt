@@ -1,13 +1,29 @@
-﻿XXYourComputableMyIGNameHere : Validation Results
+﻿FoodAllergyIG : Validation Results
 =========================================
 
-err = 1, warn = 0, info = 0
+err = 3, warn = 6, info = 0
 IG Publisher Version: 1.1.77
-Generated Mon Jul 26 21:17:04 UTC 2021. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+Generated Mon Jul 26 22:11:49 UTC 2021. FHIR version 4.0.1 for example.fhir.uv.food-allergy#0.1.0-test (canonical = http://somewhere.org/fhir/myig)
 
- Build Errors : 0 / 0 / 0
- /github/workspace/input/myig : 1 / 0 / 1
+ Build Errors : 0 / 2 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-FoodAllergyVS : 0 / 1 / 1
+ /github/workspace/input/foodallergy : 0 / 0 / 1
 </table>
 == n/a ==
-== /github/workspace/input/myig.xml ==
-ERROR: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be example.fhir.uv.food-allergy
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/MyPeanutAllergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy.json ==
+ERROR: AllergyIntolerance/MyPeanutAllergy: AllergyIntolerance.clinicalStatus: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-clinical), and a coding from this value set is required) (codes = null#active)
+WARNING: AllergyIntolerance/MyPeanutAllergy: AllergyIntolerance.clinicalStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: AllergyIntolerance/MyPeanutAllergy: AllergyIntolerance.verificationStatus: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-verification), and a coding from this value set is required) (codes = null#presumed)
+WARNING: AllergyIntolerance/MyPeanutAllergy: AllergyIntolerance.verificationStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
+== /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel.json ==
+ERROR: StructureDefinition/FoodAllergyModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/FoodAllergyModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== /github/workspace/fsh-generated/resources/ValueSet-FoodAllergyVS.json ==
+WARNING: ValueSet/FoodAllergyVS: ValueSet.compose[0].include[0].concept[1]: The code 8821000119104 is not valid in the system http://snomed.info/sct
+== /github/workspace/input/foodallergy.xml ==
