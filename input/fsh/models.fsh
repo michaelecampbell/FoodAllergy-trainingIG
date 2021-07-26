@@ -1,4 +1,5 @@
 Logical: FoodAllergyModel
+Parent: Element
 Title: "Food Allergy Logical Model"
 Description:    "Food Allergy information model"
 

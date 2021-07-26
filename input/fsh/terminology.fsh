@@ -4,7 +4,7 @@ ValueSet: FoodAllergyVS
 Title: "Food Allergies"
 Description:  "Main Food allergies."
 * $SCT#91935009 "Allergy to peanut"
-* $SCT#8821000119104 "Allergy to tree nut"
+* $SCT#48821000119104 "Allergy to tree nut"
 * $SCT#782555009 "Allergy to cow's milk protein"
 * $SCT#213020009 "Allergy to egg protein"
 * $SCT#417532002 "Allergy to fish"
