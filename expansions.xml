@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5e01a696-05a3-4525-9d17-d51290a48c11"/>
+  <id value="868be51a-01e8-4d07-a953-44419e405234"/>
   <meta>
-    <lastUpdated value="2021-07-26T22:11:38.563+00:00"/>
+    <lastUpdated value="2021-07-26T22:11:50.424+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 10 concepts</p>
+            <p>This value set contains 11 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
               <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
@@ -39,6 +39,14 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91935009">91935009</a>
                 </td>
                 <td>Allergy to peanuts</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-48821000119104"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48821000119104">48821000119104</a>
+                </td>
+                <td>Allergy to tree nut</td>
                 <td/>
               </tr>
               <tr>
@@ -121,7 +129,7 @@
         <name value="FoodAllergyVS"/>
         <title value="Food Allergies"/>
         <status value="active"/>
-        <date value="2021-07-26T22:11:38+00:00"/>
+        <date value="2021-07-26T22:11:50+00:00"/>
         <publisher value="Quality of Life Workgroup"/>
         <contact>
           <telecom>
@@ -137,9 +145,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ad8a6089-47ce-4d35-b8d1-21056abd3a5f"/>
-          <timestamp value="2021-07-26T22:11:45+00:00"/>
-          <total value="10"/>
+          <identifier value="urn:uuid:05d88584-08e2-4aca-a527-f13874283637"/>
+          <timestamp value="2021-07-26T22:11:59+00:00"/>
+          <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -156,6 +164,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="91935009"/>
             <display value="Allergy to peanuts"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="48821000119104"/>
+            <display value="Allergy to tree nut"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
