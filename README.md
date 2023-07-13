@@ -1,6 +1,6 @@
 ## Empty IG
 
-This is an empty IG for FHIR
+This is an empty IG
 <br> </br>
 
 ###
